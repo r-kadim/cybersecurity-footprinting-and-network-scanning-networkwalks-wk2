@@ -71,20 +71,24 @@ To map the target's entire DNS footprint such as mail server and DNS software ve
 To perform a network scan of my local network I used Zenmap which first required me to identify my local IP address and subnet using ipconfig command in Windows Command Prompt which revealed my local IP address to be 192.168.1.14 and my subnet mask 255.255.255.0.  
 
 <img width="1104" height="637" alt="ipconfig" src="https://github.com/user-attachments/assets/1b0066cf-0721-461b-9552-c29c88d15f76" />
- This indicates my nmap address is 192.168.1.0/24 which revealed my local network has 10 hosts up.
+ This indicates my nmap address is 192.168.1.0/24 with Ping scan which revealed my local network has 10 hosts up.
 
  <img width="1920" height="1034" alt="nmap" src="https://github.com/user-attachments/assets/35bc1c7a-10da-47e8-8c9c-3601c57a1d0e" />
 
+This resulted in providing ten live hosts with a IP address:
 
- 
+•	192.168.1.1
+•	192.168.1.3
+•	192.168.1.4
+•	192.168.1.5
+•	192.168.1.6
+•	192.168.1.7
+•	192.168.1.9
+•	192.168.1.10
+•	192.168.1.11
+•	192.168.1.14
 
-I first used the Windows ipconfig command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected Ping Scan to identify active hosts.
-The example results provided in the practical identified four live hosts:
-•	10.0.0.1
-•	10.0.0.4
-•	10.0.0.19
-•	10.0.0.5
-The example results also included four MAC addresses.
+T MAC addresses.
 After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
 
 
