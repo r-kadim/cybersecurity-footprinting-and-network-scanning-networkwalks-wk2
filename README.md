@@ -1,3 +1,11 @@
+<div align="center">
+
+#  PENETRATION TESTING REPORT
+FOOTPRINTING & NETWORK SCANNING PHASES
+W2-PM-FINAL | CYBERSECURITY |  NETWORKWALKS
+
+</div>
+**Building an isolated virtual lab for penetration testing and ethical hacking practice**
 
 
 | <br>Pentester Name<br /> Cybersecurity Professional | Rajesh Kadim |
@@ -9,14 +17,15 @@
 | Permission Secured | Yes |
 | Phases Covered |Phase 1: Reconnaissance & Footprinting Phase 2: Scanning & Network Discovery Phase 3-5: In Progress |
 
-**1. Liability Disclaimer**
+## 1. Liability Disclaimer
 The activities performed on these devices were performed with secured written permission using my own permitted devices. Please do not repeat any of the steps below without written permission as unauthorized access can lead to criminal charges.
 
-**2. Introduction**
+## 2. Introduction
 Reconnaissance which is also called as footprinting is the first step to any attack. Before touching a target, an attacker quietly collects as much public information about the target as possible. This report covers footprinting of the domain networkwalks.com using Kali Linux tools whois, whatweb, nslookup, curl -l, wafw00f, dnsrecon and scanning my own network with Zenmap.
 
-**3. Tools Used**
+## 3. Tools Used
 The table below lists each tool used in this report and its purpose.
+<div align="center">
 
 | **Tool**             | **Purpose**                                                      |
 | -------------------- | ---------------------------------------------------------------- |
@@ -29,9 +38,10 @@ The table below lists each tool used in this report and its purpose.
 | dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
 | Windows CMD          | Local IP and MAC address identification                          |
+</div>
 
-4. Activities Performed
-4.1 Footprinting & Reconnaissance
+## 4. Activities Performed
+### 4.1 Footprinting & Reconnaissance
 
 I performed reconnaissance against the networkwalks.com domain using six Kali Linux tools namely whois, whatweb, nslookup, curl -I, wafw00f and dnsrecon. 
 
@@ -53,6 +63,8 @@ To obtain the entry points of the domain I read the Http headers which leak the 
 To detect whether a web application firewall is protecting the site I used the command "wafw00f networkwalks.com". This told me if the site sits behind a firewall ModSecurity from SpiderLabs.
 
 <img width="1280" height="800" alt="wafwoof networkwalks com" src="https://github.com/user-attachments/assets/097a0abc-fa67-4597-88ba-585612bd450f" />
+
+
 
 To map the target's entire DNS footprint such as mail server and DNS software version I used the tool dnsrecon -d networkwalks.com. Each record from this result is a potential foothold that allowed me to understand the domains entire email and hosting setup.
 <img width="1280" height="800" alt="dnsrecon" src="https://github.com/user-attachments/assets/26663b7f-ba4a-45ff-84a0-9a7d38ef5ee6" />
