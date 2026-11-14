@@ -67,6 +67,24 @@ To detect whether a web application firewall is protecting the site I used the c
 To map the target's entire DNS footprint such as mail server and DNS software version I used the tool dnsrecon -d networkwalks.com. Each record from this result is a potential foothold that allowed me to understand the domains entire email and hosting setup.
 <img width="1280" height="800" alt="dnsrecon" src="https://github.com/user-attachments/assets/26663b7f-ba4a-45ff-84a0-9a7d38ef5ee6" />
 
+### 4.2 Network Scanning with Zenmap
+To perform a network scan of my local network I used Zenmap which first required me to identify my local IP address and subnet using ipconfig command in Windows Command Prompt which revealed my local IP address to be 192.168.1.14 and my subnet mask 255.255.255.0.  
 
+<img width="1104" height="637" alt="ipconfig" src="https://github.com/user-attachments/assets/1b0066cf-0721-461b-9552-c29c88d15f76" />
+ This indicates my nmap address is 192.168.1.0/24 which revealed my local network has 10 hosts up.
+
+ <img width="1920" height="1034" alt="nmap" src="https://github.com/user-attachments/assets/35bc1c7a-10da-47e8-8c9c-3601c57a1d0e" />
+
+
+ 
+
+I first used the Windows ipconfig command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected Ping Scan to identify active hosts.
+The example results provided in the practical identified four live hosts:
+•	10.0.0.1
+•	10.0.0.4
+•	10.0.0.19
+•	10.0.0.5
+The example results also included four MAC addresses.
+After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
 
 
