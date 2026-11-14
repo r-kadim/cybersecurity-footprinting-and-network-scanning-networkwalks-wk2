@@ -28,7 +28,7 @@ The table below lists each tool used in this report and its purpose.
 | **Tool**             | **Purpose**                                                      |
 | -------------------- | ---------------------------------------------------------------- |
 | Kali Linux & Windows | Operating systems used for reconnaissance activities             |
-| WHOIS                | Find domain registration details (owner, dates, name servers).   |
+| whois                | Find domain registration details (owner, dates, name servers).   |
 | whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
 | nslookup             | Resolve the domain name to its IP address using DNS.             |
 | curl -I              | Read the HTTP response headers of the website.                   |
@@ -76,15 +76,15 @@ To perform a network scan of my local network I used Zenmap which first required
 This resulted in providing ten live hosts with a IP addresses:
 
 •	192.168.1.1
-•	192.168.1.3
-•	192.168.1.4
-•	192.168.1.5
-•	192.168.1.6
-•	192.168.1.7
-•	192.168.1.9
-•	192.168.1.10
-•	192.168.1.11
-•	192.168.1.14
+<br>•	192.168.1.3
+<br>•	192.168.1.4
+<br>•	192.168.1.5
+<br>•	192.168.1.6
+<br>•	192.168.1.7
+<br>•	192.168.1.9
+<br>•	192.168.1.10
+<br>•	192.168.1.11
+<br>•	192.168.1.14
 
 After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
 
