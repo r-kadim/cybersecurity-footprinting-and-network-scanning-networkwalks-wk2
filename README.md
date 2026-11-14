@@ -64,9 +64,9 @@ To detect whether a web application firewall is protecting the site I used the c
 
 <img width="1280" height="800" alt="wafwoof networkwalks com" src="https://github.com/user-attachments/assets/097a0abc-fa67-4597-88ba-585612bd450f" />
 
-
-
 To map the target's entire DNS footprint such as mail server and DNS software version I used the tool dnsrecon -d networkwalks.com. Each record from this result is a potential foothold that allowed me to understand the domains entire email and hosting setup.
 <img width="1280" height="800" alt="dnsrecon" src="https://github.com/user-attachments/assets/26663b7f-ba4a-45ff-84a0-9a7d38ef5ee6" />
+
+
 
 
