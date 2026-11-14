@@ -52,7 +52,7 @@ To obtain the registration details of the domain I used the Linux tool whois whi
 Next to find out what type of software and version the domain uses I performed the command $whatweb networkwalks.com on Kali Linux. I found out the domain's Http Server runs on Apache, it uses Bootstrap[7.1.4]
 , and WordPress[7.1.4] to name a few.
 <img width="1280" height="800" alt="whatweb networkwalks com" src="https://github.com/user-attachments/assets/f6ec47f3-e5cb-4551-9493-469e0d05d2fa" />
-To obtain the IP address using the DNS I used nslookup which revealed 
+To obtain the IP address using the DNS I used nslookup which it revealed. 
 
 <img width="1280" height="800" alt="nslookup networkwalks com" src="https://github.com/user-attachments/assets/59d09aa1-69e6-4665-93b2-07729d513c4e" />
 
@@ -93,4 +93,6 @@ After completing the scan, I opened the Topology section in Zenmap, enabled the 
 
 [nmap topology .pdf](https://github.com/user-attachments/files/34843043/nmap.topology.pdf)
 
-
+## 5. Risk Analysis
+Based on what I observed during the footprinting and network scanning I identified the following potential risks.
+1. 
