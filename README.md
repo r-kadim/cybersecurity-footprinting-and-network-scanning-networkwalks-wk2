@@ -75,7 +75,7 @@ To perform a network scan of my local network I used Zenmap which first required
 
  <img width="1920" height="1034" alt="nmap" src="https://github.com/user-attachments/assets/35bc1c7a-10da-47e8-8c9c-3601c57a1d0e" />
 
-This resulted in providing ten live hosts with a IP address:
+This resulted in providing ten live hosts with a IP addresses:
 
 •	192.168.1.1
 •	192.168.1.3
@@ -90,5 +90,7 @@ This resulted in providing ten live hosts with a IP address:
 
 T MAC addresses.
 After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
+
+[nmap topology .pdf](https://github.com/user-attachments/files/34843043/nmap.topology.pdf)
 
 
