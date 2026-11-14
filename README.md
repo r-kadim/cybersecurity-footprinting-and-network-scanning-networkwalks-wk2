@@ -5,17 +5,15 @@ FOOTPRINTING & NETWORK SCANNING PHASES
 W2-PM-FINAL | CYBERSECURITY |  NETWORKWALKS
 
 </div>
-**Building an isolated virtual lab for penetration testing and ethical hacking practice**
-
 
 | <br>Pentester Name<br /> Cybersecurity Professional | Rajesh Kadim |
 | :---: | :--- |
 | Program/Batch | Networkwalks - B084 |
-| Date | November 13, 2026 |
-| Modules Completed | W2-PM1 (Multiple Kali Tools)W2-PM5 (Zenmap Scanning) |
-| Client Target| 1. Networkwalks (secured written permission already)2. My own local LAN Network |
+| Date | November 14, 2026 |
+| Modules Completed |  W2-PM1 (Multiple Kali Tools) <br>W2-PM5 (Zenmap Scanning) <br />|
+| Client Target| 1. Networkwalks (secured written permission already) <br> 2. My own local LAN Network |
 | Permission Secured | Yes |
-| Phases Covered |Phase 1: Reconnaissance & Footprinting Phase 2: Scanning & Network Discovery Phase 3-5: In Progress |
+| Phases Covered |Phase 1: Reconnaissance & Footprinting  <br> Phase 2: Scanning & Network Discovery <br>Phase 3-5: In Progress <br />|
 
 ## 1. Liability Disclaimer
 The activities performed on these devices were performed with secured written permission using my own permitted devices. Please do not repeat any of the steps below without written permission as unauthorized access can lead to criminal charges.
@@ -60,7 +58,7 @@ To obtain the entry points of the domain I read the Http headers which leak the 
 
 <img width="1280" height="800" alt="curl -I networkwalks com" src="https://github.com/user-attachments/assets/1841d338-22ca-4694-8492-0b02cccfe1b2" />
 
-To detect whether a web application firewall is protecting the site I used the command "wafw00f networkwalks.com". This told me if the site sits behind a firewall ModSecurity from SpiderLabs.
+To detect whether a web application firewall is protecting the site I used the command "wafw00f networkwalks.com". This told me the site sits behind a firewall ModSecurity from SpiderLabs.
 
 <img width="1280" height="800" alt="wafwoof networkwalks com" src="https://github.com/user-attachments/assets/097a0abc-fa67-4597-88ba-585612bd450f" />
 
@@ -88,11 +86,16 @@ This resulted in providing ten live hosts with a IP addresses:
 •	192.168.1.11
 •	192.168.1.14
 
-T MAC addresses.
 After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
+
+<img width="1920" height="993" alt="Topology" src="https://github.com/user-attachments/assets/f93c6a02-4baf-4c86-9ee7-7ac66c4384c1" />
+
 
 [nmap topology .pdf](https://github.com/user-attachments/files/34843043/nmap.topology.pdf)
 
 ## 5. Risk Analysis
-Based on what I observed during the footprinting and network scanning I identified the following potential risks.
-1. 
+Based on what I observed during the footprinting and network scanning I identified the following potential risks. When performing reconnaissance using six Kali Linux tools, I found that the "whois" tool shows complete registration details of a domain, which attackers can use to create a similar-looking fraudulent site. The "whatweb" tool reveals the exact software version, allowing attackers to find vulnerabilities and gain access. The "nslookup" tool provides the site's actual IP address, highlighting other domains that might have weak points. The "curl -I" tool shows endpoints for information access. The "wafw00f" tool identifies the firewall software, which attackers can try to bypass. Lastly, "dnsrecon" reveals the domain's structure. While gaining this information is possible, actual access still requires significant effort. The recommendation is to stay alert about vulnerabilities and keep security updates current.
+
+## 6. Conclusion
+During Week 2 of my Cybersecurity & Ethical Hacking internship, I engaged in practical activities focused on footprinting, reconnaissance, and network scanning. I utilized six Kali Linux tools to gather domain information, including whois, whatweb, nslookup, curl -I, wafw00f, and dnsrecon. Using Zenmap, I identified my local network setup and discovered active hosts, gathering IP and MAC addresses to create a network topology. This experience highlighted the importance of information gathering in cybersecurity and the need for clear documentation in reports. Furthermore, I learned that such activities should always be conducted within an authorized scope.
+
